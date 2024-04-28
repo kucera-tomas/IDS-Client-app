@@ -126,6 +126,6 @@ Po zakliknutí tlačítka zachytit stopu může ministr vyplnit informace o dete
 ---
 
 ### Ukázka používání aplikace
-Zde je video demonstrující používání aplikace.
+Zde je odkaz na video demonstrující používání aplikace:
 
-[Demonstrační video](https://www.stud.fit.vutbr.cz/~xkucer0t/demo.mp4)
+[https://www.stud.fit.vutbr.cz/~xkucer0t/demo.mp4](https://www.stud.fit.vutbr.cz/~xkucer0t/demo.mp4)
