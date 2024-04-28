@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.idsclientapp.KouzelnikController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="1200.0" layoutX="-200.0" layoutY="-261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buttons/button_background.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image_frame" fitHeight="240.0" fitWidth="240.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/frame.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image_kouzelnik" fitHeight="200.0" fitWidth="200.0" layoutX="40.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/mages/harry_potter.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="289.0" layoutY="20.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="text_runove_jmeno" fill="#edbd42" strokeType="OUTSIDE" strokeWidth="0.0" text="Runové jméno: runove_jmeno">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="text_obcanske_jmeno" fill="#edbd42" strokeType="OUTSIDE" strokeWidth="0.0" text="Občanské jméno: obcanske_jmeno">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="text_adresa" fill="#edbd42" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresa: cela_adresa">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="text_uroven" fill="#edbd42" strokeType="OUTSIDE" strokeWidth="0.0" text="Úroveň: uroven">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="text_specializace" fill="#edbd42" strokeType="OUTSIDE" strokeWidth="0.0" text="Specializace: specializace">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="text_kancelar" fill="#edbd42" strokeType="OUTSIDE" strokeWidth="0.0" text="Kancelář: kancelar">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="text_pracovni_areal" fill="#edbd42" strokeType="OUTSIDE" strokeWidth="0.0" text="Pracovní areál: pracovni_areal">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <ScrollPane fx:id="scroll_pane" fitToWidth="true" hbarPolicy="NEVER" layoutX="20.0" layoutY="350.0" maxHeight="400.0" maxWidth="600.0" minHeight="0.0" minViewportWidth="100.0" pannable="true" prefHeight="300.0" prefViewportHeight="400.0" prefViewportWidth="100.0" prefWidth="600.0" vbarPolicy="ALWAYS">
+        <content>
+          <AnchorPane fx:id="anchor_pane_items" maxHeight="600.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="600.0">
+               <children>
+                  <VBox fx:id="items_list" maxHeight="600.0" minHeight="0.0" prefHeight="100.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ImageView fx:id="image_logout" fitHeight="150.0" fitWidth="200.0" layoutX="786.0" layoutY="14.0" onMouseClicked="#logout" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buttons/logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image_sprava_predmetu" fitHeight="150.0" fitWidth="200.0" layoutX="786.0" layoutY="74.0" onMouseClicked="#sprava_predmetu" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buttons/sprava_predmetu.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image_zachytit_stopu" fitHeight="150.0" fitWidth="200.0" layoutX="786.0" layoutY="132.0" onMouseClicked="#zachytit_stopu" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buttons/zachytit_stopu.png" />
+         </image>
+      </ImageView>
+      <Text fill="#ffb72b" layoutX="20.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vlastněné předměty:">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

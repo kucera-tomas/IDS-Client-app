@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.idsclientapp.DetekceStopyController">
+   <children>
+      <ImageView fitHeight="820.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buttons/button_background.png" />
+         </image>
+      </ImageView>
+      <StackPane prefHeight="700.0" prefWidth="1000.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox fx:id="vbox_detektor" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text fill="#edbd42" strokeType="OUTSIDE" strokeWidth="0.0" text="POUŽITÝ DETEKTOR">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="125.0" top="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="vbox_stopa" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text fill="#edbd42" strokeType="OUTSIDE" strokeWidth="0.0" text="TYP ZANECHANÉ STOPY">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="125.0" top="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="vbox_predmet" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text fill="#edbd42" strokeType="OUTSIDE" strokeWidth="0.0" text="RUNOVÝ KÓD PŘEDMĚTU">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="125.0" top="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+      <ImageView fx:id="image_back" fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="600.0" onMouseClicked="#button_back_kouzelnik" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buttons/back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image_zachytit" fitHeight="150.0" fitWidth="200.0" layoutX="700.0" layoutY="600.0" onMouseClicked="#detekovat_stopu" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buttons/zachytit_stopu.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

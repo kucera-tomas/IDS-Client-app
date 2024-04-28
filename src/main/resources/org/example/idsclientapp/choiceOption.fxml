@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onOptionClicked" prefHeight="64.0" prefWidth="246.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.idsclientapp.ChoiceOptionController">
+   <children>
+      <ImageView fx:id="image" fitHeight="64.0" fitWidth="246.0" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buttons/background.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="item_text" fill="#ffd51c" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HARRY POTTER" textAlignment="CENTER" wrappingWidth="246.0">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+   </children>
+</Pane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.idsclientapp.ItemHistoryController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1000.0" pickOnBounds="true">
+         <image>
+            <Image url="@buttons/button_background.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scroll_pane" fitToWidth="true" hbarPolicy="NEVER" layoutX="281.0" layoutY="62.0" maxHeight="500.0" minHeight="0.0" minViewportWidth="100.0" pannable="true" prefHeight="500.0" prefViewportWidth="100.0" prefWidth="700.0" vbarPolicy="ALWAYS">
+        <content>
+          <AnchorPane fx:id="anchor_pane_items" maxHeight="500.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="685.0">
+               <children>
+                  <VBox fx:id="vbox_items" layoutX="245.0" maxHeight="500.0" minHeight="0.0" prefHeight="500.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Text fill="#edbd42" layoutX="281.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Historie Vlastnictví">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="button_back_item_list" fitHeight="150.0" fitWidth="200.0" layoutX="750.0" layoutY="600.0" onMouseClicked="#button_back_item_list" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buttons/back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image_predmet" fitHeight="200.0" fitWidth="200.0" layoutX="33.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../šejk/alBUM/scrapbook_images/items/01-weapons/mage/itm1_66_1_2.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="33.0" layoutY="244.0" prefHeight="317.0" prefWidth="229.0" spacing="40.0">
+         <children>
+            <Text fx:id="text_nazev_predmetu" fill="#edbd42" strokeType="OUTSIDE" strokeWidth="0.0" text="Název: nazev_predmetu">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="text_typ_predmetu" fill="#edbd42" strokeType="OUTSIDE" strokeWidth="0.0" text="Typ: typ_predmetu">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="text_nebezpecnost" fill="#edbd42" strokeType="OUTSIDE" strokeWidth="0.0" text="Stupeň nebezpečnosti: 999">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</Pane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<Pane maxWidth="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.idsclientapp.ItemHistoryViewController">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="700.0" pickOnBounds="true">
+         <image>
+            <Image url="@item_background.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="item_hbox" prefHeight="100.0" prefWidth="700.0" style="-fx-background-color: transparent;">
+         <children>
+            <ImageView fx:id="image_vlastnik_predmetu" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../šejk/alBUM/scrapbook_images/monsters/15-academy/monster1112.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="0.0" spacing="8.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="text_runove_jmeno_vlastnika" alignment="CENTER" text="Vlastník: runova_jmeno" textFill="#edbd42" />
+                  <Label fx:id="text_vlastni_od" alignment="CENTER" text="Od: 99.99.99999" textFill="#edbd42" />
+                  <Label fx:id="text_vlastni_do" alignment="CENTER" text="Do: 99.99.99999" textFill="#edbd42" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="204.0" spacing="20.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="text_zpusob_zisku" alignment="CENTER" text="Způsob zisku: hodne dlouhy popisek zisku predmetu" textFill="#edbd42" />
+                  <Label fx:id="text_zpusob_ztraty" alignment="CENTER" text="Způsob ztráty: hodne dlouhy popisek zpusobu ztraty predmetu" textFill="#edbd42" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.idsclientapp.ItemListController">
+   <children>
+      <ImageView fitHeight="820.0" fitWidth="1220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buttons/button_background.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scroll_pane" fitToWidth="true" hbarPolicy="NEVER" layoutX="21.0" layoutY="62.0" maxHeight="500.0" minViewportHeight="300.0" minViewportWidth="100.0" pannable="true" prefHeight="500.0" prefViewportHeight="100.0" prefViewportWidth="100.0" prefWidth="960.0" vbarPolicy="ALWAYS">
+        <content>
+          <AnchorPane fx:id="anchor_pane_items" maxHeight="2000.0" minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="600.0">
+               <children>
+                  <VBox fx:id="vbox_items" maxHeight="2000.0" maxWidth="600.0" minHeight="300.0" prefHeight="2000.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Text fill="#edbd42" layoutX="21.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seznam předmětů:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="image_back" fitHeight="150.0" fitWidth="200.0" layoutX="700.0" layoutY="600.0" onMouseClicked="#button_back" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buttons/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

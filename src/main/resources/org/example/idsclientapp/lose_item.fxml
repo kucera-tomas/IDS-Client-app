@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.idsclientapp.LoseItemController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1000.0" pickOnBounds="true">
+         <image>
+            <Image url="@buttons/button_background.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="input_runove_jmeno" layoutX="403.0" layoutY="219.0" promptText="zpusob_ztraty" />
+      <Text fx:id="text_zpusob_ztraty" fill="#edbd42" layoutX="339.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Způsob ztráty __Item__ kouzelníkem __Mage__">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fill="#edbd42" layoutX="339.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Přiřadit nového vlastníka">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="option_kouzelnik" layoutX="402.0" layoutY="308.0" prefWidth="150.0" />
+      <ImageView fx:id="image_zmena" fitHeight="150.0" fitWidth="200.0" layoutX="380.0" layoutY="400.0" onMouseClicked="#lose_item" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buttons/zmena_vlastnika.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="600.0" onMouseClicked="#button_back" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buttons/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

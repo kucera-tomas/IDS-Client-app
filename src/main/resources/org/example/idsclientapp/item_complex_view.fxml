@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxWidth="960.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.idsclientapp.ItemComplexViewController">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="960.0" pickOnBounds="true">
+         <image>
+            <Image url="@item_background.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="item_hbox" prefHeight="100.0" prefWidth="960.0" style="-fx-background-color: transparent;">
+         <children>
+            <ImageView fx:id="image_predmet" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../šejk/alBUM/scrapbook_images/items/01-weapons/mage/itm1_3_5_2.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="0.0" spacing="8.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="text_nazev_predmetu" alignment="CENTER" text="Název: cely_nazev_predmetu" textFill="#edbd42" />
+                  <Label fx:id="text_typ_predmetu" alignment="CENTER" text="Typ: typ_predmetu" textFill="#edbd42" />
+                  <Label fx:id="text_stupen" alignment="CENTER" text="Stupeň nebezpečnosti: 99" textFill="#edbd42" />
+                  <Label fx:id="text_valikost" alignment="CENTER" text="Velikost: 456" textFill="#edbd42" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="106.0" spacing="20.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="text_nazev_vlastnika" text="Vlatník: nazev_vlastnika" textFill="#edbd42" />
+                  <Label fx:id="text_zpusob_zisku" text="Způsob zisku: hodne_detailni_popis_zisku_predmetu" textFill="#edbd42" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="300.0">
+               <children>
+                  <ImageView fx:id="image_historie" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#historie_vlastnictvi" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@buttons/historie_vlastnictvi.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="image_zmena" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#zmena_vlastnika" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@buttons/zmena_vlastnika.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>

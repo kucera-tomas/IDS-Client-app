@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="100.0" maxWidth="600.0" minHeight="100.0" minWidth="600.0" prefHeight="100.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.idsclientapp.ItemViewController">
+   <children>
+      <ImageView fx:id="image_background" fitHeight="100.0" fitWidth="620.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/item_background.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="item_hbox" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: transparent;">
+         <children>
+            <ImageView fx:id="image_predmet" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../šejk/alBUM/scrapbook_images/items/01-weapons/mage/itm1_3_5_2.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="100.0" spacing="8.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="text_nazev_predmetu" alignment="CENTER" style="-fx-text-fill: #FFB72B;" text="Název: cely_nazev_predmetu" />
+                  <Label fx:id="text_typ_predmetu" alignment="CENTER" style="-fx-text-fill: #FFB72B;" text="Typ: typ_predmetu" />
+                  <Label fx:id="text_stupen" alignment="CENTER" style="-fx-text-fill: #FFB72B;" text="Stupeň nebezpečnosti: 99" />
+                  <Label fx:id="text_valikost" alignment="CENTER" style="-fx-text-fill: #FFB72B;" text="Velikost: 456" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" maxWidth="220.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="0.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="image_ztratit" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#ztratit_predmet" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@buttons/ztratit.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="image_pouzit" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#pouzit_predmet" onMouseEntered="#button_on_hover" onMouseExited="#button_off_hover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@buttons/pouzit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>
